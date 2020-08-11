@@ -130,4 +130,16 @@ function articleMaker(article){
   date.classList.add('date');
   spanButton.classList.add('expandButton');
 
+  articleDiv.appendChild(title);
+  articleDiv.appendChild(date);
+  articleDiv.appendChild(paragraph1);
+  articleDiv.appendChild(paragraph2);
+  articleDiv.appendChild(paragraph3);
+  articleDiv.appendChild(spanButton);
+
+  //step 2
+  spanButton.addEventListener('click', () => {
+    spanButton.toggle('article-open');
+  })
+
 }

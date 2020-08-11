@@ -118,4 +118,16 @@ const data = [
 */
 function articleMaker(article){
   
+  const articleDiv = document.createElement('div');
+  const title = document.createElement('h2');
+  const date = document.createElement('p');
+  const paragraph1 = document.createElement('p');
+  const paragraph2 = document.createElement('p');
+  const paragraph3 = document.createElement('p');
+  const spanButton = document.createElement('span');
+  
+  article.classList.add('article');
+  date.classList.add('date');
+  spanButton.classList.add('expandButton');
+
 }

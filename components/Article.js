@@ -125,10 +125,17 @@ function articleMaker(article){
   const paragraph2 = document.createElement('p');
   const paragraph3 = document.createElement('p');
   const spanButton = document.createElement('span');
+
+  title.innerText = article.title;
+  date.innerText = article.date;
+  paragraph1.innerText = article.firstParagraph;
+  paragraph2.innerText = article.secondParagraph;
+  paragraph3.innerText = article.thirdParagraph;
+  spanButton.textContent= '+';
   
-  article.classList.add('article');
+  articleDiv.classList.add('article');
   date.classList.add('date');
-  spanButton.classList.add('expandButton');
+  spanButton.classList.add("expandButton");
 
   articleDiv.appendChild(title);
   articleDiv.appendChild(date);
@@ -139,7 +146,16 @@ function articleMaker(article){
 
   //step 2
   spanButton.addEventListener('click', () => {
-    spanButton.toggle('article-open');
-  })
+    articleDiv.classList.toggle('article-open');
 
+  })
+  //step 3
+  return articleDiv;
 }
+
+const entryPoint = document.querySelector('.articles');
+
+data.map((e) => {
+  //console.log(e);
+  entryPoint.appendChild(articleMaker(e));
+})

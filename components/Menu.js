@@ -49,4 +49,4 @@ function menuMaker(arr){
   return menu;
 }
 const header = document.querySelector('.header');
-header.appendChild(menuMaker(menuItems));
+header.prepend(menuMaker(menuItems));

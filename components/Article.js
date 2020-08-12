@@ -158,14 +158,16 @@ function articleMaker(article){
 
   articleDiv.appendChild(title);
   articleDiv.appendChild(date);
+  articleDiv.appendChild(spanButton);
   articleDiv.appendChild(paragraph1);
   articleDiv.appendChild(paragraph2);
   articleDiv.appendChild(paragraph3);
-  articleDiv.appendChild(spanButton);
+  
 
   //step 2
   spanButton.addEventListener('click', () => {
     articleDiv.classList.toggle('article-open');
+ 
 
   })
   //step 3
@@ -174,7 +176,7 @@ function articleMaker(article){
 
 const entryPoint = document.querySelector('.articles');
 
-data.map((e) => {
+data.forEach((e) => {
   //console.log(e);
   entryPoint.appendChild(articleMaker(e));
 })

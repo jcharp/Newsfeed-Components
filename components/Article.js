@@ -86,6 +86,25 @@ const data = [
     thirdParagraph: `Hodor hodor - hodor... Hodor hodor hodor hodor. Hodor. Hodor! Hodor hodor, hodor hodor hodor hodor hodor; hodor hodor? Hodor!
           Hodor hodor, HODOR hodor, hodor hodor?! Hodor! Hodor hodor, HODOR hodor, hodor hodor, hodor, hodor hodor. Hodor, hodor.
           Hodor. Hodor, hodor, hodor. Hodor hodor... Hodor hodor hodor?! Hodor, hodor... Hodor hodor HODOR hodor, hodor hodor. Hodor.`
+  },
+
+  {
+    title: 'New Article that I Added',
+    date: 'August 11, 2020',
+    firstParagraph: 'This is the first paragraph that i am adding to the new article. I am just going to put in some filler.  Hodor hodor, HODOR hodor, hodor hodor?! Hodor! Hodor hodor, HODOR hodor, hodor hodor, hodor, hodor hodor. Hodor, hodor',
+
+    secondParagraph: 'this is the second paragraph that i am adding. and i am putting in some filler  sit amet, consectetur adipiscing elit. Blastoise Lorem ipsum dolor sit amet, consectetur adipiscing elit. Caterpie Lorem ipsum dolor sit amet, consectetur adipiscing elit. Metapod Lorem ipsum dolor sit amet, consectetur adipiscing elit. Butterfree Lorem ipsum dolor sit amet, consectetur adipiscing elit. Weedle Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+
+    thirdParagraph: 'It seems that i have to do a lot of formatting when i copy and past paragraphs in so i am going to leave this as this'
+
+  },
+
+  {
+    title: 'Another Article I Created Today',
+    date: 'August 11, 2020',
+    firstParagraph: 'One of the simplest array methods is .forEach - it runs the array through a loop, passing each item to our callback function. It doesn’t return a new array or mutate the data at all (unless we tell it to). .forEach is a simple way to iterate over the array, create components, and add them instantly to the DOM.',
+    secondParagraph:'In the next lesson, we will learn how to retrieve dynamic data, but for now, we are going to build and use our own array. Let’s imagine that this data can change and may not always look like how we built it. We want a way to create components based on the data present. This data can come in many different forms. In this simple case, we are using an array of strings:',
+    thirdParagraph: 'Now, sticking with that last example, let’s imagine we want to create many buttons on our page. We could very quickly repeat the code there for each button we want to create, appending them to the parent each time. Although from our knowledge so far, we know that repeating ourselves is something we want to avoid. We can easily compartmentalize all of the code into a function. Looking back on that last example, can you identify the pieces that might change? Anything that may change, we can add in as an argument, everything else will stay the same. This function will allow us to create components'
   }
 ];
 
